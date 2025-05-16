@@ -1,15 +1,19 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.sqshq.jsontestplugin</id>
-    <name>json-test-plugin</name>
+    <name>JSON-TEST</name>
     <vendor>sqshq</vendor>
 
     <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.json</depends>
+    <depends>com.intellij.modules.java</depends>
+    <depends>JUnit</depends>
 
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.sqshq.jsontestplugin.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-        <postStartupActivity implementation="com.github.sqshq.jsontestplugin.startup.MyProjectActivity" />
+        <codeInsight.lineMarkerProvider
+                language="JSON"
+                implementationClass="com.github.sqshq.jsontestplugin.JsonTestLineMarkerProvider"/>
     </extensions>
 </idea-plugin>
