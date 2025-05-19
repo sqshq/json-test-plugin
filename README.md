@@ -4,6 +4,8 @@
 IntelliJ IDEA plugin that allows to run/debug bazel tests defined as json files. Relies on the existing bazel test Run Configuration that should be saved as `Bazel Test Template`.
 <!-- Plugin description end -->
 
+Skunkworks project. Tested only on IntelliJ v2025.1.1, use at your own risk.
+
 Test files should adhere the following structure:
 
 ```
@@ -16,7 +18,6 @@ Test files should adhere the following structure:
 ```
 
 ## Installation
-Note: The following instutructions were tested on IntelliJ v2025.1.1.1
 
 -  Download the [latest release](https://github.com/sqshq/json-test-plugin/releases/latest) and install it manually using
   <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>⚙️</kbd> > <kbd>Install plugin from disk...</kbd>
@@ -25,5 +26,5 @@ Note: The following instutructions were tested on IntelliJ v2025.1.1.1
 
 ## Next steps
 
-- Allow support for multiple json tests per project, possibly utilizing BAZEL build file property to point plugin to the relevant test class
-- Add shortcut support
+- Add support for multiple run configurations per project, possibly utilizing BAZEL build file property to point plugin to the relevant test class
+- Add support for shortcuts
