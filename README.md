@@ -21,8 +21,9 @@ Test files should adhere the following structure:
 
 -  Download the [latest release](https://github.com/sqshq/json-test-plugin/releases/latest) and install it manually using
   <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>⚙️</kbd> > <kbd>Install plugin from disk...</kbd>
-- Run the desired test once, click <kbd>Run</kbd> > <kbd>Edit Configurations</kbd> and save the last run as  `Bazel Test Template`, make sure to check `Store as project file`
-- Make a change to your test to accept the `json.test.prefix` env variable to filter the tests based on the provided `filename_testname` prefix
+- Run the desired test once, click <kbd>Run</kbd> > <kbd>Edit Configurations</kbd> and save the last run as  `Bazel Test Template`, make sure to check `Store as project file`:
+  ![output](https://github.com/user-attachments/assets/669d370d-4af1-4595-8bc3-681ad055e6d1)
+
 
 ## Next steps
 
